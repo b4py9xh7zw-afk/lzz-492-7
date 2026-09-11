@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>服装厂计件看板</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- ============ 登录页 ============ -->
+<div id="view-login" class="login-wrap" style="display:none">
+  <div class="login-box">
+    <div class="logo">
+      <div class="icon">👕</div>
+      <h1>服装厂计件看板</h1>
+      <p>组长录入 · 工人查薪 · 月底导出</p>
+    </div>
+    <div class="tabs">
+      <button id="tab-admin" class="active" onclick="switchLogin('admin')">组长 / 管理</button>
+      <button id="tab-worker" onclick="switchLogin('worker')">工人查工资</button>
+    </div>
+    <form id="login-form" onsubmit="return doLogin(event)">
+      <div id="field-code" class="form-group" style="display:none">
+        <label>工号</label>
+        <input id="login-code" autocomplete="username" placeholder="如 A001">
+      </div>
+      <div class="form-group">
+        <label id="login-pwd-label">管理员密码</label>
+        <input id="login-pin" type="password" autocomplete="current-password" placeholder="默认 123456">
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">登 录</button>
+      <div id="login-msg" class="inline-msg err" style="display:none"></div>
+      <div class="hint">工人端仅可查看本人工资，无法看到他人收入</div>
+    </form>
+  </div>
+</div>
+
+<!-- ============ 管理端 ============ -->
+<div id="view-admin" class="layout" style="display:none">
+  <aside class="sidebar">
+    <div class="brand">👕 计件看板<small>服装厂生产管理</small></div>
+    <nav class="nav">
+      <button data-page="dashboard" class="active" onclick="goto('dashboard')">📊 今日看板</button>
+      <button data-page="entry" onclick="goto('entry')">📝 产量录入</button>
+      <button data-page="styles" onclick="goto('styles')">🧵 款号工序工价</button>
+      <button data-page="workers" onclick="goto('workers')">👥 工人管理</button>
+      <button data-page="subsidy" onclick="goto('subsidy')">🎁 补贴登记</button>
+      <button data-page="export" onclick="goto('export')">📤 月底导出</button>
+      <button data-page="settings" onclick="goto('settings')">⚙️ 设置</button>
+    </nav>
+    <div class="spacer"></div>
+    <button class="btn logout" onclick="logout()">退出登录</button>
+  </aside>
+  <main class="main" id="admin-main"></main>
+</div>
+
+<!-- ============ 工人手机端 ============ -->
+<div id="view-worker" style="display:none;min-height:100vh;background:#eef2f8">
+  <div class="phone-header">
+    <div class="top">
+      <div>
+        <div class="name" id="w-name">—</div>
+        <div class="date" id="w-date">—</div>
+      </div>
+      <button class="logout-link" onclick="logout()">退出</button>
+    </div>
+  </div>
+  <div class="phone-body">
+    <div class="wage-card">
+      <div class="label">今日工资预估（元）</div>
+      <div class="big"><span id="w-total">0.00</span><span class="unit"> 元</span></div>
+      <div class="breakdown">
+        <div><div class="b-label">计件工资</div><div class="b-val" id="w-piece" style="color:var(--primary)">0.00</div></div>
+        <div><div class="b-label">缺料补贴</div><div class="b-val" id="w-shsub" style="color:var(--purple)">0.00</div></div>
+        <div><div class="b-label">其他补贴</div><div class="b-val" id="w-manual" style="color:var(--green)">0.00</div></div>
+      </div>
+    </div>
+
+    <div class="section-title">📅 本月累计</div>
+    <div class="month-card">
+      <div class="row"><span>普通计件</span><span class="v" id="m-piece">0.00 元</span></div>
+      <div class="row"><span>缺料补贴</span><span class="v" id="m-shsub">0.00 元</span></div>
+      <div class="row"><span>其他补贴</span><span class="v" id="m-manual">0.00 元</span></div>
+      <div class="row total"><span>本月合计（预估）</span><span class="v" id="m-total">0.00 元</span></div>
+    </div>
+
+    <div class="section-title">📋 今日明细</div>
+    <div id="w-records"></div>
+
+    <div class="section-title" id="w-subs-title" style="display:none">🎁 今日补贴</div>
+    <div id="w-subs"></div>
+
+    <div style="text-align:center;color:var(--muted);font-size:12px;padding:18px 0 8px">
+      工资为实时预估值，月底以导出工资表为准
+    </div>
+  </div>
+</div>
+
+<div id="modal-root"></div>
+<div id="toast"></div>
+
+<script src="/js/api.js"></script>
+<script src="/js/login.js"></script>
+<script src="/js/admin.js"></script>
+<script src="/js/worker.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>

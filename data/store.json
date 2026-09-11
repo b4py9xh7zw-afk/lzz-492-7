@@ -1,0 +1,334 @@
+{
+  "settings": {
+    "adminPassword": "123456",
+    "shortageSubsidyEnabled": true,
+    "reworkPay": 0,
+    "qcfailPay": 0
+  },
+  "sessions": {
+    "64cd69a0052d00cfa7c74ee30b0ce268548cd349e472360c": {
+      "role": "admin",
+      "workerId": null,
+      "createdAt": 1789138978651,
+      "expiresAt": 1791730978651
+    },
+    "cd15e0ba417f12639d4170c2d57a8da1163901e5d8993f23": {
+      "role": "admin",
+      "workerId": null,
+      "createdAt": 1789139035000,
+      "expiresAt": 1791731035000
+    },
+    "b79a8d6e3a69dcca91a209fef02c6fa4166da795d15276c4": {
+      "role": "worker",
+      "workerId": "98defcca-31a4-44b6-b9b9-e3335743098d",
+      "createdAt": 1789139035026,
+      "expiresAt": 1791731035026
+    },
+    "1512a46173e9ab05646edead0fde50bfc121da971fb8edfa": {
+      "role": "admin",
+      "workerId": null,
+      "createdAt": 1789139096312,
+      "expiresAt": 1791731096312
+    },
+    "a68b6b141f443146143db8fd4ca6bd2c77d3a666083d1e49": {
+      "role": "admin",
+      "workerId": null,
+      "createdAt": 1789139128170,
+      "expiresAt": 1791731128170
+    },
+    "094febff0353a6f0aa72fb0fa2f76f25557037359f02f482": {
+      "role": "admin",
+      "workerId": null,
+      "createdAt": 1789139183845,
+      "expiresAt": 1791731183845
+    },
+    "c14bb1375fdb397ca71b62d8be6cadd11b68418ba9e3dcda": {
+      "role": "admin",
+      "workerId": null,
+      "createdAt": 1789139205382,
+      "expiresAt": 1791731205382
+    },
+    "cfe7746639bbb1667b569fddef8e3af270d52a4350cda1a6": {
+      "role": "worker",
+      "workerId": "98defcca-31a4-44b6-b9b9-e3335743098d",
+      "createdAt": 1789139205693,
+      "expiresAt": 1791731205693
+    },
+    "e1c62c04bdbfe629555e6e7409cb4ccb4a296c99a843aabe": {
+      "role": "worker",
+      "workerId": "1f0292b8-9aa3-494e-8072-c36b824e3152",
+      "createdAt": 1789139205735,
+      "expiresAt": 1791731205735
+    },
+    "4b6af25e45f2a012c2a5530c33b1c24039dec58ffda9ef99": {
+      "role": "worker",
+      "workerId": "cf0e6afb-a4fc-4ad0-b5f7-52471fd2454a",
+      "createdAt": 1789139205781,
+      "expiresAt": 1791731205781
+    },
+    "35744dade724cf94bed21c21fc04e3a9e0abec09ec2c23df": {
+      "role": "worker",
+      "workerId": "98defcca-31a4-44b6-b9b9-e3335743098d",
+      "createdAt": 1789139205822,
+      "expiresAt": 1791731205822
+    },
+    "38238fb29cc5fbe6e04de505a64fe3201f3868f40ac016dc": {
+      "role": "admin",
+      "workerId": null,
+      "createdAt": 1789141069698,
+      "expiresAt": 1791733069698
+    },
+    "6239f8b9fe2b0185f355177a549eba09b6a3c4ec95d0c3bd": {
+      "role": "worker",
+      "workerId": "98defcca-31a4-44b6-b9b9-e3335743098d",
+      "createdAt": 1789141069759,
+      "expiresAt": 1791733069759
+    },
+    "46a576129debfbf5e2dfd061bb07ec9cecac5e6ed77008ff": {
+      "role": "admin",
+      "workerId": null,
+      "createdAt": 1789141691600,
+      "expiresAt": 1791733691600
+    },
+    "12f6c4405756636e323e39a95d62941ea651b4874cd2fd56": {
+      "role": "admin",
+      "workerId": null,
+      "createdAt": 1789145487543,
+      "expiresAt": 1791737487543
+    },
+    "c817b13d651bbcae05a868074716262525980949e8adc1a2": {
+      "role": "worker",
+      "workerId": "98defcca-31a4-44b6-b9b9-e3335743098d",
+      "createdAt": 1789145487605,
+      "expiresAt": 1791737487605
+    },
+    "7e3aa6405ff6863a9bc1350c8f4200d47eb4a1650e19b356": {
+      "role": "admin",
+      "workerId": null,
+      "createdAt": 1789145536288,
+      "expiresAt": 1791737536288
+    }
+  },
+  "workers": [
+    {
+      "id": "98defcca-31a4-44b6-b9b9-e3335743098d",
+      "code": "A001",
+      "name": "张晓梅",
+      "pin": "1234"
+    },
+    {
+      "id": "1f0292b8-9aa3-494e-8072-c36b824e3152",
+      "code": "A002",
+      "name": "李春兰",
+      "pin": "1234"
+    },
+    {
+      "id": "961ac331-f42f-41f6-840f-ee3d50e769c3",
+      "code": "A003",
+      "name": "王秀芳",
+      "pin": "1234"
+    },
+    {
+      "id": "cf0e6afb-a4fc-4ad0-b5f7-52471fd2454a",
+      "code": "B001",
+      "name": "陈桂英",
+      "pin": "1234"
+    },
+    {
+      "id": "fe4d5847-0a13-4c32-b78c-1c003ef8f5a2",
+      "code": "B002",
+      "name": "赵金凤",
+      "pin": "1234"
+    }
+  ],
+  "styles": [
+    {
+      "id": "39437e2f-9fd1-4894-bb45-cb52c3697afa",
+      "styleNo": "K-8801",
+      "process": "前片拼缝",
+      "price": 0.85,
+      "shortageRate": 0.1,
+      "active": true
+    },
+    {
+      "id": "20587c9c-0daf-4c88-aee2-f274c609cda1",
+      "styleNo": "K-8801",
+      "process": "装拉链",
+      "price": 1.2,
+      "shortageRate": 0.15,
+      "active": true
+    },
+    {
+      "id": "f8113944-7a81-4f45-8c3d-f01fe1e65513",
+      "styleNo": "K-8801",
+      "process": "袖口绗线",
+      "price": 0.65,
+      "shortageRate": 0.1,
+      "active": true
+    },
+    {
+      "id": "b8075d07-e278-4564-a34c-d2767e2c7964",
+      "styleNo": "W-6620",
+      "process": "锁眼钉扣",
+      "price": 0.45,
+      "shortageRate": 0.05,
+      "active": true
+    },
+    {
+      "id": "b903571f-5bee-4b68-b392-09b7bb9b460c",
+      "styleNo": "W-6620",
+      "process": "整烫包装",
+      "price": 0.55,
+      "shortageRate": 0.05,
+      "active": true
+    }
+  ],
+  "records": [
+    {
+      "id": "7a5afb8b-5722-4d8b-b619-1f8d6e1dd1b1",
+      "date": "2026-09-11",
+      "workerId": "98defcca-31a4-44b6-b9b9-e3335743098d",
+      "styleId": "39437e2f-9fd1-4894-bb45-cb52c3697afa",
+      "ok": 120,
+      "rework": 3,
+      "shortage": 5,
+      "qcfail": 1,
+      "priceSnapshot": 0.85,
+      "shortageRateSnapshot": 0.1,
+      "createdAt": "2026-09-11T15:02:57.171Z",
+      "updatedAt": "2026-09-11T15:02:57.171Z"
+    },
+    {
+      "id": "68f06370-2fa8-499f-abdf-82acda482b85",
+      "date": "2026-09-11",
+      "workerId": "98defcca-31a4-44b6-b9b9-e3335743098d",
+      "styleId": "20587c9c-0daf-4c88-aee2-f274c609cda1",
+      "ok": 80,
+      "rework": 1,
+      "shortage": 0,
+      "qcfail": 2,
+      "priceSnapshot": 1.2,
+      "shortageRateSnapshot": 0.15,
+      "createdAt": "2026-09-11T15:02:57.171Z",
+      "updatedAt": "2026-09-11T15:02:57.171Z"
+    },
+    {
+      "id": "16be4a73-3c30-4477-93ad-e154115d689e",
+      "date": "2026-09-11",
+      "workerId": "1f0292b8-9aa3-494e-8072-c36b824e3152",
+      "styleId": "39437e2f-9fd1-4894-bb45-cb52c3697afa",
+      "ok": 135,
+      "rework": 0,
+      "shortage": 8,
+      "qcfail": 0,
+      "priceSnapshot": 0.85,
+      "shortageRateSnapshot": 0.1,
+      "createdAt": "2026-09-11T15:02:57.171Z",
+      "updatedAt": "2026-09-11T15:02:57.171Z"
+    },
+    {
+      "id": "6ef5023d-f034-4fff-b46e-230f52be0fd5",
+      "date": "2026-09-11",
+      "workerId": "961ac331-f42f-41f6-840f-ee3d50e769c3",
+      "styleId": "f8113944-7a81-4f45-8c3d-f01fe1e65513",
+      "ok": 200,
+      "rework": 5,
+      "shortage": 0,
+      "qcfail": 3,
+      "priceSnapshot": 0.65,
+      "shortageRateSnapshot": 0.1,
+      "createdAt": "2026-09-11T15:02:57.171Z",
+      "updatedAt": "2026-09-11T15:02:57.171Z"
+    },
+    {
+      "id": "2715ac30-1c5f-4e3d-b809-b07add63db47",
+      "date": "2026-09-11",
+      "workerId": "cf0e6afb-a4fc-4ad0-b5f7-52471fd2454a",
+      "styleId": "b8075d07-e278-4564-a34c-d2767e2c7964",
+      "ok": 300,
+      "rework": 4,
+      "shortage": 10,
+      "qcfail": 2,
+      "priceSnapshot": 0.45,
+      "shortageRateSnapshot": 0.05,
+      "createdAt": "2026-09-11T15:02:57.171Z",
+      "updatedAt": "2026-09-11T15:02:57.171Z"
+    },
+    {
+      "id": "ce84fc98-4606-4f1c-844f-f5a4dae366c8",
+      "date": "2026-09-11",
+      "workerId": "fe4d5847-0a13-4c32-b78c-1c003ef8f5a2",
+      "styleId": "b903571f-5bee-4b68-b392-09b7bb9b460c",
+      "ok": 160,
+      "rework": 0,
+      "shortage": 0,
+      "qcfail": 0,
+      "priceSnapshot": 0.55,
+      "shortageRateSnapshot": 0.05,
+      "createdAt": "2026-09-11T15:02:57.171Z",
+      "updatedAt": "2026-09-11T15:02:57.171Z"
+    },
+    {
+      "id": "5df67808-73dd-4abb-9749-4f283eb64790",
+      "date": "2026-09-10",
+      "workerId": "98defcca-31a4-44b6-b9b9-e3335743098d",
+      "styleId": "39437e2f-9fd1-4894-bb45-cb52c3697afa",
+      "ok": 110,
+      "rework": 2,
+      "shortage": 0,
+      "qcfail": 1,
+      "priceSnapshot": 0.85,
+      "shortageRateSnapshot": 0.1,
+      "createdAt": "2026-09-11T15:02:57.171Z",
+      "updatedAt": "2026-09-11T15:02:57.171Z"
+    },
+    {
+      "id": "217b51dc-9317-49a7-9f12-09262dd7c235",
+      "date": "2026-09-10",
+      "workerId": "1f0292b8-9aa3-494e-8072-c36b824e3152",
+      "styleId": "20587c9c-0daf-4c88-aee2-f274c609cda1",
+      "ok": 90,
+      "rework": 0,
+      "shortage": 4,
+      "qcfail": 0,
+      "priceSnapshot": 1.2,
+      "shortageRateSnapshot": 0.15,
+      "createdAt": "2026-09-11T15:02:57.171Z",
+      "updatedAt": "2026-09-11T15:02:57.171Z"
+    },
+    {
+      "id": "293c1bae-a615-4c7b-82d5-23e3e646c8f3",
+      "date": "2026-09-10",
+      "workerId": "961ac331-f42f-41f6-840f-ee3d50e769c3",
+      "styleId": "f8113944-7a81-4f45-8c3d-f01fe1e65513",
+      "ok": 190,
+      "rework": 3,
+      "shortage": 6,
+      "qcfail": 2,
+      "priceSnapshot": 0.65,
+      "shortageRateSnapshot": 0.1,
+      "createdAt": "2026-09-11T15:02:57.171Z",
+      "updatedAt": "2026-09-11T15:02:57.171Z"
+    }
+  ],
+  "subs": [
+    {
+      "id": "fbe7ed01-255a-44cc-9cb0-5db542373ec9",
+      "date": "2026-09-11",
+      "workerId": "98defcca-31a4-44b6-b9b9-e3335743098d",
+      "amount": 20,
+      "type": "全勤奖",
+      "reason": "演示数据",
+      "createdAt": "2026-09-11T15:02:57.171Z"
+    },
+    {
+      "id": "5aad2c42-924c-4775-ba64-749930aa50c0",
+      "date": "2026-09-10",
+      "workerId": "961ac331-f42f-41f6-840f-ee3d50e769c3",
+      "amount": 15,
+      "type": "加班补贴",
+      "reason": "演示数据",
+      "createdAt": "2026-09-11T15:02:57.171Z"
+    }
+  ]
+}
